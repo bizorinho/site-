@@ -1,20 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
   }
   
-  header {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
+  .bg-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-bg.jpg') no-repeat center center/cover;
+    color: #fff;
   }
   
   h1, h2 {
     font-weight: bold;
   }
   
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
   }
   

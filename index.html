@@ -3,40 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saúde e Movimento</title>
+  <title>Combate ao Sedentarismo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="text-center py-5 bg-primary text-white" tabindex="0">
-    <h1>Saúde e Movimento</h1>
-    <p>Combata o sedentarismo e viva melhor!</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Saúde em Movimento</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#dicas">Dicas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center text-white py-5 bg-header" tabindex="0">
+    <div class="container">
+      <h1 class="display-4">Combata o Sedentarismo</h1>
+      <p class="lead">Pequenos passos para grandes mudanças na sua vida!</p>
+    </div>
   </header>
 
-  <main class="container my-5">
-    <section tabindex="0" class="mb-5">
-      <h2>O que é sedentarismo?</h2>
-      <p>O sedentarismo é a falta de atividades físicas regulares, um dos principais fatores de risco para diversas doenças.</p>
-    </section>
+  <!-- Sobre Section -->
+  <section id="sobre" class="py-5" tabindex="0">
+    <div class="container">
+      <h2 class="text-center mb-4">O que é Sedentarismo?</h2>
+      <p class="text-center">O sedentarismo é caracterizado pela falta de atividades físicas regulares e está relacionado a vários problemas de saúde, como obesidade, diabetes e doenças cardiovasculares.</p>
+    </div>
+  </section>
 
-    <section tabindex="0">
-      <h2>Como melhorar com exercícios?</h2>
-      <ul>
-        <li>Caminhadas diárias</li>
-        <li>Alongamentos simples</li>
-        <li>Atividades como dança e natação</li>
-      </ul>
-    </section>
-  </main>
+  <!-- Dicas Section -->
+  <section id="dicas" class="py-5 bg-light" tabindex="0">
+    <div class="container">
+      <h2 class="text-center mb-4">Como Melhorar sua Vida</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Faça Caminhadas</h5>
+              <p class="card-text">Reserve 30 minutos do seu dia para caminhar, seja ao ar livre ou em casa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Pratique Alongamentos</h5>
+              <p class="card-text">Faça pausas ao longo do dia para se alongar e aliviar tensões musculares.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Encontre um Esporte</h5>
+              <p class="card-text">Escolha uma atividade que você goste, como dança, ciclismo ou natação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contato Section -->
+  <section id="contato" class="py-5" tabindex="0">
+    <div class="container">
+      <h2 class="text-center mb-4">Fale Conosco</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="text-center py-3 bg-dark text-white">
-    <p>© 2025 Saúde e Movimento - Todos os direitos reservados.</p>
+    <p>© 2025 Saúde em Movimento - Todos os direitos reservados.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
-    ScrollReveal().reveal('section', { delay: 300, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('section', { delay: 200, distance: '50px', origin: 'bottom' });
   </script>
 </body>
 </html>
