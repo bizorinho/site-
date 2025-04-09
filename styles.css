@@ -3,21 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Turret+Road&display=swap');
 
 :root {
-    --laranja-claro: #00ff1a;
-    --alto-contraste-fundo: #00cc3d;
-    --alto-contraste-texto: #ffffff;
+    --laranja-claro: #7b00ff;
+    --alto-contraste-fundo: #5900ff;
+    --alto-contraste-texto: #000000;
     --alto-contraste-link: #ffd700;
 }
 
 body {  
     font-size: 1rem;
     font-family: 'Agdasima';
-    background-color: #00cc3d;
+    background-color: #4800ff;
     color: white;
 }
 
 header {
-    background-color: #84c484
+    background-color: #340095;
 }
 
 
@@ -86,7 +86,7 @@ section {
     margin-top: 3rem;
     margin-bottom: 3rem;
     background-size: 180px 180px;
-    background-color: rgb(0, 172, 43);
+    background-color: rgb(47, 0, 255);
     border-radius: 20px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -109,7 +109,7 @@ h2 {
 }
 
 #galeria {
-    background-color: rgb(0, 172, 43);
+    background-color: rgb(47, 0, 255);
     border-radius: 20px;
 
 }
